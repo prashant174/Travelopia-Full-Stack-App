@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    background-image: url("https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,w_1280,h_1200,g_face/travelopia-web/2021/08/USA-Arches-National-Park-UT-e1640034251676.png");
+}
+#nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#nav>div:nth-child(1){
+    font-size: 35px;
+    color: antiquewhite;
+}
+#nav>div:nth-child(2){
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 0px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(23, 190, 23);
+    cursor: pointer;
+}
+#nav>div:nth-child(2):hover{
+    background-color: rgb(22, 133, 22);
+    transition: 1s;
+}
+#tagline{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#tagline h3{
+    font-family: sans-serif;
+}
+form{
+    border: 1px solid rgb(47, 49, 47);
+    background-color: rgba(128, 128, 128, 0.24);
+    width: 50%;
+    margin: auto;
+    padding: 30px 50px;
+    color: rgb(45, 240, 77);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+form input, select{
+    width: 100%;
+    padding: 7px 00px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+button{
+    background-color: rgb(47, 189, 47);
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(22, 133, 22);
+    transition: 1s;
+}
+.loadingDiv{
+    width: 10%;
+    height: auto;
+    margin: auto;
+    border: 0px solid black;
+    display: none;
+}
+.loadingDiv>img{
+    width: 100%;
+}

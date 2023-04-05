@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    background-image: url("https://res.cloudinary.com/enchanting/q_70,f_auto,c_fill,w_1280,h_1200,g_face/travelopia-web/2021/08/USA-Arches-National-Park-UT-e1640034251676.png");
+}
+#nav{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+#nav>div:nth-child(1){
+    font-size: 35px;
+    color: antiquewhite;
+}
+#nav>div:nth-child(2){
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+    font-family: sans-serif;
+    border: 0px solid black;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgb(23, 190, 23);
+    cursor: pointer;
+}
+#nav>div:nth-child(2):hover{
+    background-color: rgb(22, 133, 22);
+    transition: 1s;
+}
+#tagline{
+    width: 60%;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#tagline h3{
+    font-family: sans-serif;
+}
+
+#container{
+    width: 80%;
+    margin: auto;
+    border: 1px solid gray;
+    background-color: rgba(128, 128, 128, 0.151);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 10px 20px;
+}
+#container>div{
+    border: 1px solid red;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.247);
+    color: white;
+    font-weight: bold;
+}
+.loader{
+    margin: auto;
+    border: 1px solid black;
+    margin-left: 100px;
+ display: none;
+}
+
+@media  (max-width:1100px) and (min-width:800px){
+#container{
+    grid-template-columns: repeat(3,1fr);
+}
+}
+@media  (max-width:799px) and (min-width:500px){
+    #container{
+        grid-template-columns: repeat(2,1fr);
+    }
+    }
+
+    @media  (max-width:499px) and (min-width:200px){
+        #container{
+            grid-template-columns: repeat(1,1fr);
+        }
+        }

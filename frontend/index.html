@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/index.css">
+    <title>Travelopia</title>
+</head>
+<body>
+<div id="nav">
+    <div>Travelopia</div>
+    <div id="details">Your Details</div>
+</div>
+
+<div id="tagline">
+    <h3>THE WORLD'S LEADING COLLECTION OF</h3>
+    <h1>EXPERIENTIAL TRAVEL BRANDS</h1>
+</div>
+
+    
+    <form action="">
+        <label for="">Your Name</label>
+        <input type="name" placeholder="Enter your name here" id="name" required >
+        <label for="">Your email address</label>
+        <input type="email" placeholder="Enter your email address here" id="email" required >
+        <label for="">select your destination</label>
+        <select name="destinations" id="destination" required>
+            <option value="India">India</option>
+            <option value="Africa">Africa</option>
+            <option value="Europe">Europe</option>
+        </select>
+        <label for="">Number of traveller</label>
+        <input type="number" placeholder="Number of travellers" id="traveller" required>
+        <label for="">Budget</label>
+        <input type="number" placeholder="Your budget" id="budget" required>
+       <button>Submit</button>
+    </form>
+    <div class="loadingDiv">
+        <img src="https://cdn.pixabay.com/animation/2022/10/11/03/16/03-16-39-160_512.gif" alt="loader" class="loader">
+    </div>
+    
+</body>
+</html>
+<script src="./script/index.js"></script>
