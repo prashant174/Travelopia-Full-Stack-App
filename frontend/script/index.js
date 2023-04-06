@@ -18,12 +18,12 @@ async function sumbitData(e) {
     let traveller = document.getElementById('traveller').value
     let budget = document.getElementById('budget').value
 
-    let form = { name, email,destination, traveller,  budget };
+    let obj = { name, email,destination, traveller,  budget };
     console.log(form)
     
     let res = await fetch('https://calm-pear-barracuda-hose.cyclic.app/api/fillTravellerDetails', {
       method: 'POST',
-      body: JSON.stringify(form),
+      body: JSON.stringify(obj),
       headers: {
         'Content-Type': "application/json"
       }
@@ -42,6 +42,7 @@ async function sumbitData(e) {
     document.getElementById('budget').value = ''
   }
   catch (err) {
+      alert("server error")
     console.error(err)
   }
 }
